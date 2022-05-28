@@ -11,4 +11,4 @@ Don't feel like choosing what to wear today or just want to display a random ite
 
 ![Alt](./watchSuggestion.jpg "watch suggestion")
 
-Right now the data must be contained in the .star file. Maybe `pixlet` will support external files/libraries at some point, but who knows.
+Right now the data must be contained in the `.star` file. Maybe `pixlet` will support external files/libraries at some point, but who knows.
