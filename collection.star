@@ -1,9 +1,7 @@
 load("render.star", "render")
 load("encoding/base64.star", "base64")
 load("http.star", "http")
-
-RANDOM_API = "http://www.randomnumberapi.com/api/v1.0/random?min=0&max=2&count=1"
-#RANDOM_API = "https://www.random.org/integers/?num=1&min=0&max=2&col=1&base=10&format=plain&rnd=new"
+load("random.star", "random")
 
 IMG_DATA = [
 
@@ -31,12 +29,8 @@ white_color="#FFFFFF" # white
 
 def main():
 
-    rand = http.get(RANDOM_API)
-    if rand.status_code != 200:
-        fail("Random number generation failed with status %d", rand.status_code)
-    i = rand.json()[0]
-    i = int(i)
-    print(i)
+    i = random.number(0, 2)
+    #print(i)
     BRAND_NAME = BrandNames[i]
     MODEL_NAME = ModelNames[i]
     IMG_WIDTH = Widths[i]
