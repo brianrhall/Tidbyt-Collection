@@ -30,7 +30,7 @@ white_color="#FFFFFF" # white
 def main():
 
     i = random.number(0, 2)
-    #print(i)
+    # print(i)
     BRAND_NAME = BrandNames[i]
     MODEL_NAME = ModelNames[i]
     IMG_WIDTH = Widths[i]
